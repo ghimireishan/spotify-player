@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.36.1",
+    "clsx": "^2.0.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^4.36.1",
+    "@types/node": "^20.8.4",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
