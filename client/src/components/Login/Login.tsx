@@ -3,24 +3,17 @@ import Button from "@/components/Button";
 
 import spotifyLogo from "@/assets/spotify.png";
 
+const clientId = import.meta.env.VITE_CLIENT_ID;
+const redirectUrl = import.meta.env.VITE_REDIRECT_URL;
+const apiUrl = import.meta.env.VITE_API_URL;
+const scopes = import.meta.env.VITE_SCOPES;
+
 export default function Login() {
   
   const handleClick = () => {
-    const clientId = "5502837e8d1843c78853847792918fa0";
-    const redirectUrl = "http://localhost:5173/";
-    const apiUrl = "https://accounts.spotify.com/authorize";
-    const scopes = [
-      "user-read-private", 
-      "user-read-email", 
-      "user-read-playback-state", 
-      "user-modify-playback-state",
-      "user-read-currently-playing",
-      "user-read-playback-position",
-      "user-top-read",
-      "user-read-recently-played"
-    ];
-    window.location.href = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes.join(" ")}
+    const requestURL = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes}
     &response_type=token&show_dialog=true`;
+    window.location.href = requestURL;
   };
 
   return (
