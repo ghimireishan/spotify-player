@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React from "react";
 import { reducerCases } from "./Constants";
 
 export const initialState = {
@@ -22,6 +22,5 @@ const reducer: React.Reducer<typeof initialState, ReducerProps> = (state, action
       return state;
   }
 };
-
 
 export default reducer;

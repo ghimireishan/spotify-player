@@ -1,7 +1,6 @@
 // @ts-nocheck
 
 import React, {createContext, useContext, useReducer} from "react";
-import reducer from "./reducer";
 
 export const StateContext = createContext();
 

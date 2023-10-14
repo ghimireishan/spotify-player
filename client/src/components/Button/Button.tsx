@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 const variants = {
     filled: "bg-green-600 text-white",
-    outlined: "bg-transparent text-white border-1-white"
+    outlined: "bg-transparent text-white border-2 border-white"
   };
   
   const sizes = {

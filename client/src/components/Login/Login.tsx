@@ -11,8 +11,7 @@ const scopes = import.meta.env.VITE_SCOPES;
 export default function Login() {
   
   const handleClick = () => {
-    const requestURL = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes}
-    &response_type=token&show_dialog=true`;
+    const requestURL = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes}&response_type=token&show_dialog=true`;
     window.location.href = requestURL;
   };
 
