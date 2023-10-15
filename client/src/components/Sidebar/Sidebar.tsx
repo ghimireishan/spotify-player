@@ -1,6 +1,6 @@
 import React from "react";
-import { FaHome, FaSearch, FaSwatchbook } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { FaHome, FaSearch, FaSwatchbook } from "react-icons/fa";
 import Playlists from "../Playlists";
 
 export default function Sidebar() {

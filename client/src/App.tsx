@@ -1,11 +1,12 @@
 // @ts-nocheck
 
 import { useEffect } from "react";
-import "./App.css";
-import Login from "./components/Login/Login";
+
 import { useStateProvider } from "./utils/StateProvider";
 import { reducerCases } from "./utils/Constants";
 import Spotify from "./components/Login/Spotify";
+import Login from "./components/Login/Login";
+import "./App.css";
 
 function App() {
   const [{ token }, dispatch] = useStateProvider();

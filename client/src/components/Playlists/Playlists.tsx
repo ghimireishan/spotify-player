@@ -1,9 +1,8 @@
 import React from "react";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 import { useStateProvider } from "@/utils/StateProvider";
 import { useQuery } from "@tanstack/react-query";
 import { Loading } from "../Loading/Loading";
-import PlaylistDetail from "./PlaylistDetail"; 
 
 interface SpotifyUser {
     display_name: string;
